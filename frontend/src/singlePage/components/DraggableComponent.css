@@ -1,0 +1,33 @@
+.draggable {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 150px;
+    text-align: center;
+    user-select: none; /* Disable text selection during dragging */
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .close-button {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  

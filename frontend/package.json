@@ -1,0 +1,67 @@
+{
+  "name": "rtc-visualizer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+    
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && ncp dist ../backend/static",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "start": "serve -s dist -l ${PORT:-8000}"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^6.1.8",
+    "@mui/lab": "^6.0.0-beta.16",
+    "@mui/material": "^6.1.8",
+    "@mui/x-date-pickers": "^7.22.2",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "express": "^4.21.1",
+    "framer-motion": "^11.11.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "^0.18.5",
+    "ncp": "^2.0.0"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^1.9.0",
+    "@eslint/js": "^9.13.0",
+    "@storybook/addon-essentials": "8.3.6",
+    "@storybook/addon-interactions": "8.3.6",
+    "@storybook/addon-links": "8.3.6",
+    "@storybook/addon-onboarding": "8.3.6",
+    "@storybook/blocks": "8.3.6",
+    "@storybook/react": "8.3.6",
+    "@storybook/react-vite": "8.3.6",
+    "@storybook/test": "8.3.6",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.13",
+    "eslint-plugin-storybook": "^0.11.0",
+    "globals": "^15.11.0",
+    "prop-types": "^15.8.1",
+    "react-router-dom": "^6.27.0",
+    "storybook": "8.3.6",
+    "vite": "^5.4.9"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended",
+      "plugin:storybook/recommended",
+      "plugin:storybook/recommended"
+    ]
+  }
+}

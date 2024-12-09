@@ -1,0 +1,4 @@
+[config]
+SCM_DO_BUILD_DURING_DEPLOYMENT=1
+zipIgnorePattern=*.git*;*.idea*;frontend/node_modules*;*.vscode;backend/.venv*;DemoVideos;README.md;Stato.txt
+command = ./startup.sh
